@@ -1,0 +1,7 @@
+{
+  "name": "sumativaE2Ciego",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
