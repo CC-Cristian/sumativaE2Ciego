@@ -1,27 +1,62 @@
-#container {
-  text-align: center;
+/* Puedes colocar este código en tu archivo CSS correspondiente */
+.thermometer {
+  width: 40px;
+  height: 200px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  position: relative;
+  background: #e6e6e6;
+  padding: 10px;
+}
 
+.thermometer__inner {
+  background: red;
+  width: 100%;
   position: absolute;
+  bottom: 0;
+  transition: height 0.3s;
+  border-radius: 10px;
+}
+/* Asegúrate de incluir este código en tu archivo de estilos */
+.thermometer {
+  width: 50px;
+  height: 200px;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  position: relative;
+  overflow: hidden;
+  background: #e6e6e6;
+  border-radius: 25px;
+}
+
+.thermometer progress {
+  width: 200px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.thermometer progress::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.thermometer progress::-webkit-progress-value {
+  background-color: red;
+  border-radius: 20px;
+}
+
+.thermometer progress::-moz-progress-bar {
+  background-color: red;
+  border-radius: 20px;
+}
+
+.thermometer-value {
+  position: absolute;
+  top: -210px; /* Adjust based on the actual height of your progress bar */
   left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
 }

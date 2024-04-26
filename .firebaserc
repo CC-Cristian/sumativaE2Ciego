@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "termometro-d814a": {
+      "hosting": {
+        "app": [
+          "termometro-d814a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "termometro-d814a"
+  }
+}
